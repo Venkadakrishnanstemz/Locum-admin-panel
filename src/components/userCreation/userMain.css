@@ -1,0 +1,58 @@
+/* Unified Active Nav Style - override Bootstrap pill styling */
+.nav-pills .nav-link,
+.nav-link {
+  color: #000;
+  background-color: transparent;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+ 
+.nav-link:hover {
+  background-color: #f1f5ff;
+  color: #000;
+}
+ 
+.nav-pills .nav-link.active,
+.nav-link.active {
+  background-color: #d9d9d9 !important; /* Light gray background */
+  color: #000 !important;               /* Force black text */
+  font-weight: 600;
+  border-left: 3px solid #000;
+}
+ 
+ .account-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+  .account-description {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 13px;
+  }
+  
+  .form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .form-control:focus {
+    border-color: #007bff;
+    box-shadow: none;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }

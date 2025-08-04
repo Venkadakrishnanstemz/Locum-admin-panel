@@ -1,0 +1,60 @@
+.sidebar {
+  width: 220px;
+  background-color: #f8f9fa;
+  height: 100vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: width 0.3s ease;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.logo-text {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.platform-text {
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.user-info h4 {
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.user-info p {
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+/* Responsive sidebar shrink */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+    padding: 0.5rem;
+  }
+
+  .sidebar .logo-text,
+  .sidebar .platform-text,
+  .sidebar .nav-item span,
+  .sidebar .user-info {
+    display: none;
+  }
+
+  .sidebar .logo-icon,
+  .sidebar .nav-icon,
+  .sidebar .user-avatar {
+    margin: auto;
+  }
+}

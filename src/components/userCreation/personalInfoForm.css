@@ -1,0 +1,43 @@
+/* userMain.css */
+ 
+.form-control,
+.form-select {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 10px 14px;
+  font-family: 'Inter', sans-serif;
+  box-shadow: none;
+}
+ 
+.form-control:focus,
+.form-select:focus {
+  border-color: #a0a0a0;
+  box-shadow: none;
+}
+ 
+.form-label {
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #111;
+}
+ 
+h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #222;
+}
+ 
+button.btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 8px;
+}
+ 
+ 

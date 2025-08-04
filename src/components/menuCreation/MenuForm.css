@@ -1,0 +1,15 @@
+
+/* Target Ant Design Table horizontal scroll containers */
+.ant-table-body::-webkit-scrollbar,
+.ant-table-content::-webkit-scrollbar,
+.ant-table-scroll::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* Firefox and IE support */
+.ant-table-body,
+.ant-table-content,
+.ant-table-scroll {
+  -ms-overflow-style: none !important;  /* IE and Edge */
+  scrollbar-width: none !important;     /* Firefox */
+}

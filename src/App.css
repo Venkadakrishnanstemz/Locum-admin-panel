@@ -1,0 +1,9 @@
+.locum-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../src/assets/images/background.jpg');
+    background-size: cover;
+  background-position: center;
+}

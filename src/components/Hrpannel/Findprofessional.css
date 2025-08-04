@@ -1,0 +1,791 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    flex: 1;
+    padding: 0;
+    background: #fff;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 24px;
+}
+
+.top-header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.notification-icon {
+    cursor: pointer;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 24px;
+    padding: 0 24px;
+}
+
+.filters-panel {
+    width: 280px;
+    padding: 24px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filters-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.filter-group {
+    margin-bottom: 24px;
+}
+
+.filter-group h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.date-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.date-input label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.date-input input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-primary {
+    background-color: #1890ff;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #1890ff;
+    padding: 8px 16px;
+    border: 1px solid #1890ff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.results-area {
+    flex: 1;
+}
+
+.search-section {
+    margin-bottom: 24px;
+}
+
+.search-section {
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+/* Search bar and filter tags */
+.search-bar-container {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.search-input-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.search-icon {
+  margin-left: 12px;
+  color: #888;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+.search-btn {
+  background-color: #1890ff;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  height: 100%;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.search-btn:hover {
+  background-color: #40a9ff;
+}
+
+.filter-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  padding: 4px 0;
+  margin-top: 8px;
+}
+
+.filter-tag {
+  background-color: #f0f2f5;
+  border-radius: 16px;
+  padding: 6px 12px;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  height: 28px;
+}
+
+
+.results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.results-count {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+}
+
+.view-controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.sort-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sort-select {
+    padding: 8px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.view-mode-selector {
+    display: flex;
+    gap: 8px;
+}
+
+.view-mode-btn {
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.view-mode-btn.active {
+    background: #1890ff;
+    color: #fff;
+    border-color: #1890ff;
+}
+
+.professionals-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.professional-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px;
+}
+
+.no-results {
+    grid-column: 1 / -1;
+    padding: 24px;
+    text-align: center;
+    color: #888;
+    font-size: 16px;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;           /* Horizontal center */
+    justify-content: center;       /* Vertical center */
+    gap: 10px;
+}
+
+
+.professional-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.professional-info {
+    flex: 1;
+}
+
+.professional-name {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 4px 0;
+}
+
+.rating-score {
+    font-size: 14px;
+    color: #888;
+    margin-left: 4px;
+}
+
+.profession {
+    font-size: 14px;
+    color: #666;
+}
+
+.info-section {
+    margin-bottom: 16px;
+}
+
+.info-title {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.info-content {
+    font-size: 12px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.location-content {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.availability-calendar {
+    display: flex;
+    gap: 4px;
+    margin: 8px 0;
+}
+
+.day-cell {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.day-available {
+    background: #e6f7ff;
+    color: #1890ff;
+}
+
+.day-unavailable {
+    background: #f5f5f5;
+    color: #888;
+}
+
+.card-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.btn-book, .btn-view {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex: 1;
+    justify-content: center;
+}
+
+.btn-book {
+    background-color: #1890ff;
+    color: white;
+}
+
+.btn-view {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.pagination button {
+    padding: 8px 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.pagination button.active {
+    background: #1890ff;
+    color: #fff;
+    border-color: #1890ff;
+}
+
+.pagination button:disabled {
+    color: #d9d9d9;
+    cursor: not-allowed;
+}
+
+/* Modal Styles */
+.professional-profile-modal .ant-modal-body {
+    padding: 24px;
+}
+
+.profile-content {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.profile-header {
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.profile-image {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.avatar-placeholder {
+    width: 100%;
+    height: 120px;
+    border-radius: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1890ff;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    border: 1px solid #e0e0e0;
+}
+
+.profile-info h3 {
+    margin-bottom: 4px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a365d;
+}
+
+.profession {
+    margin-bottom: 8px;
+    color: #4a5568;
+    font-size: 14px;
+}
+
+.rating {
+    font-size: 16px;
+    color: #f59e0b;
+}
+
+.details-row {
+    margin-top: 16px;
+}
+
+.details-card {
+    padding: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #fafafa;
+    height: 100%;
+}
+
+.details-card h4 {
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.details-card p {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.details-card strong {
+    color: #4a5568;
+    margin-right: 6px;
+}
+
+/* Booking Modal Styles */
+.booking-modal .ant-modal-content {
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.booking-modal .ant-modal-header {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.booking-modal .ant-modal-title {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.booking-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.doctor-info-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.doctor-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.doctor-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.doctor-details h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.specialty {
+    color: #666;
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.rating .filled {
+    color: #ffc107;
+}
+
+.rating .half-filled {
+    color: #ffc107;
+    opacity: 0.7;
+}
+
+.rating span {
+    margin-left: 4px;
+    font-size: 14px;
+    color: #666;
+}
+
+.dates-section h3, 
+.times-section h3,
+.booking-details h3,
+.booking-summary h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.dates-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.date-cell {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.date-cell:hover {
+    border-color: #1890ff;
+}
+
+.date-cell.selected {
+    background-color: #1890ff;
+    color: white;
+    border-color: #1890ff;
+}
+
+.date-cell div:first-child {
+    font-size: 14px;
+    color: inherit;
+}
+
+.date-cell div:last-child {
+    font-weight: 500;
+    color: inherit;
+}
+
+.time-slots-horizontal {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+}
+
+.time-slots-horizontal .time-slot {
+    white-space: nowrap;
+    min-width: 120px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.time-slots-horizontal .time-slot:hover {
+    border-color: #1890ff;
+}
+
+.time-slots-horizontal .time-slot.selected {
+    background-color: #1890ff;
+    color: white;
+    border-color: #1890ff;
+}
+
+.time-slots-horizontal::-webkit-scrollbar {
+    height: 4px;
+}
+
+.time-slots-horizontal::-webkit-scrollbar-thumb {
+    background: #d9d9d9;
+    border-radius: 4px;
+}
+
+.divider {
+    height: 1px;
+    background-color: #f0f0f0;
+    margin: 16px 0;
+}
+
+.detail-row {
+    margin-bottom: 16px;
+}
+
+.detail-row label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #666;
+}
+
+.full-option {
+    padding: 8px 12px;
+}
+
+.option-title {
+    font-weight: 500;
+    color: #333;
+}
+
+.option-description {
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.summary-row:last-child {
+    margin-bottom: 0;
+}
+
+.total-amount {
+    font-weight: 600;
+    color: #1890ff;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.cancel-btn {
+    padding: 8px 24px;
+    border-radius: 6px;
+}
+
+.confirm-btn {
+    padding: 8px 24px;
+    border-radius: 6px;
+    background-color: #1890ff;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .professionals-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .filters-panel {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dates-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .doctor-info-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+    }
+    
+    .cancel-btn, .confirm-btn {
+        width: 100%;
+    }
+}
+
+.two-column-layout {
+  display: flex;
+  gap: 20px; /* Adjust spacing between left/right boxes */
+}
+
+.left-box {
+  width: 40%; /* Adjust width as needed */
+  flex-shrink: 0;
+}
+
+.right-box {
+  flex-grow: 1;
+}
+

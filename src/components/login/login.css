@@ -1,0 +1,160 @@
+/* .login-card {
+  max-width: 380px;
+  margin: 80px auto;
+  padding: 32px 28px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-size: 14px;
+  color: #555;
+  display: block;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.forgot-password {
+  text-align: right;
+}
+
+.forgot-password-link {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 0;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  text-align: left;
+} */
+
+
+.login-card {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-title {
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  color: #595959;
+  margin-bottom: 8px;
+}
+
+.ant-form-item {
+  margin-bottom: 16px; /* Consistent spacing for all form items */
+}
+
+.ant-input-affix-wrapper, .ant-select {
+  width: 100%;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.ant-input-affix-wrapper:focus, .ant-select-focused .ant-select-selector {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.error-message {
+  color: #ff4d4f;
+  font-size: 14px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.login-button {
+  background: #1890ff;
+  border: none;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-button:hover {
+  background: #40a9ff;
+}
+
+.forgot-password {
+  margin-top: 16px;
+}
+
+.forgot-password-link {
+  color: #1890ff;
+  font-size: 14px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.forgot-password-link:hover {
+  color: #40a9ff;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    margin: 20px;
+    padding: 20px;
+  }
+}

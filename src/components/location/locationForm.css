@@ -1,0 +1,8 @@
+/* .custom-location-table .ant-table-body {
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+.custom-location-table .ant-table-body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+} */
