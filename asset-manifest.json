@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Locum-admin-panel/static/css/main.fb5b76c7.css",
-    "main.js": "/Locum-admin-panel/static/js/main.4389df4c.js",
+    "main.js": "/Locum-admin-panel/static/js/main.1610e4d1.js",
     "static/js/787.bf36a60c.chunk.js": "/Locum-admin-panel/static/js/787.bf36a60c.chunk.js",
     "static/media/background.jpg": "/Locum-admin-panel/static/media/background.ae03d5e7c4b10c45fc73.jpg",
     "static/media/bg-sidebar-desktop.svg": "/Locum-admin-panel/static/media/bg-sidebar-desktop.6918153f38678372ceb1.svg",
@@ -10,11 +10,11 @@
     "index.html": "/Locum-admin-panel/index.html",
     "static/media/icon-checkmark.svg": "/Locum-admin-panel/static/media/icon-checkmark.6ba72db67010be44885b.svg",
     "main.fb5b76c7.css.map": "/Locum-admin-panel/static/css/main.fb5b76c7.css.map",
-    "main.4389df4c.js.map": "/Locum-admin-panel/static/js/main.4389df4c.js.map",
+    "main.1610e4d1.js.map": "/Locum-admin-panel/static/js/main.1610e4d1.js.map",
     "787.bf36a60c.chunk.js.map": "/Locum-admin-panel/static/js/787.bf36a60c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fb5b76c7.css",
-    "static/js/main.4389df4c.js"
+    "static/js/main.1610e4d1.js"
   ]
 }
